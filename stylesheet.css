@@ -1,0 +1,170 @@
+html {
+    height: 100%;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #E8E8E8;
+}
+
+.topContainer {
+  margin: auto;
+  padding-top: 5vh;
+  width:100%;
+}
+
+.logoContainer{
+  margin: auto;
+  padding-bottom: 5vh;
+  width:100%;
+  align-items: center;
+}
+
+.logoContainer img {
+	margin: auto;
+	display: block;
+  height:50px;
+  width:50px;
+}
+
+.searchContainer {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  width:80%;
+  max-width: 40vmax;
+}
+
+.searchField {
+  /* Remove Highlight */
+  outline-width: 0;
+  background-color: white;
+  border: 1px solid grey;
+  height: 30px;
+  width: 100%;
+  display: block;
+  /* margin : auto; */
+  padding-left:5%;
+  font-size: 14px;
+  font-family: 'Arial';
+  color:black;
+  /* Fit to searchContainer size */
+  box-sizing: border-box;
+}
+
+.searchField:focus{
+  /* Remove Highlight for Safari */
+  outline: none;
+  background-color: whitesmoke;
+}
+
+.deleteText {
+    -webkit-appearance: none;
+    position: absolute;
+    outline: none;
+    top:0;
+    right:0;
+    height: 30px;
+    width: 30px;
+    background-color: inherit;
+    color: grey;
+    border: 0;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: grey;
+}
+
+.deleteText:hover{
+  cursor: pointer;
+}
+
+
+.listResults {
+  background-color: white;
+  position: absolute;
+  width:100%;
+  top:16px;
+  /* Remove Default List style format */
+  list-style-type: none;
+  padding: 0;
+  /* Fit listResults to searchContainer size */
+  box-sizing: border-box;
+}
+
+.listResults li {
+  cursor: pointer;
+  padding: 8px 0px 8px 0px;
+}
+
+.listResults li:hover{
+  background-color: whitesmoke;
+}
+
+.listResults li p {
+  margin: 10px 0px 10px 0px;
+  padding-left:5%;
+  line-height: 0px;
+  font-size: 14px;
+  font-family: 'Arial';
+  width:100%;
+  vertical-align: middle;
+}
+
+.savedSearchesHeader {
+  z-index: 0;
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.savedSearches {
+  z-index: 0;
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto min-content;
+}
+
+.gridItem {
+  padding: 10px 0px 10px 0px;
+  border-bottom: 1px solid lightgrey;
+  font-size: 14px;
+  font-family: 'Arial';
+}
+
+
+.gridItem.left.headline {
+  font-size: 18px;
+}
+
+
+.gridItem.center {
+  text-align: right;
+  padding-right: 12px;
+  font-size:12px;
+  color:grey;
+  vertical-align: middle;
+}
+
+.gridItem.right {
+  text-align: right;
+  font-weight: lighter;
+  font-size:12px;
+  color:grey;
+  cursor:pointer;
+}
+
+.gridItem.right.clear {
+  color: black;
+  font-size: 10px;
+  font-style: italic;
+  text-decoration: underline;
+  bottom:0;
+  line-height: 30px;
+  padding-bottom: 0;
+  cursor: pointer;
+}
