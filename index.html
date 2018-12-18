@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- ViewPort Tell app it is fullscreen, disable zooming -->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <!-- Apple Desktop Fullscreen tag -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Apple Add to Desktop Name -->
+  <meta name="apple-mobile-web-app-title" content="Arbetsprov">
+  <meta name="author" content="Niklas Nygård">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <title>Arbetsprov</title>
+</head>
+<body>
+  <noscript>
+    <h1>JavaScript is currently disabled, enable it to run this application.</h1>
+  </noscript>
+  <div class='topContainer'>
+    <div class='logoContainer'>
+      <img src='./search.png' alt='Tried making my own Logo in GIMP inspired by the API theme ;)'>
+    </div>
+    <div class='searchContainer'>
+      <div class='inputContainer'>
+        <input type='text' class='searchField' placeholder='Search for a star trek character...'>
+        <input class="deleteText" type="submit" value="x" onclick="clearSearch()">
+      </div>
+      <ul class='listResults'>
+      </ul>
+      <div class='savedSearchesHeader'>
+        <div class='gridItem left headline'>
+          Search History
+        </div>
+        <div class='gridItem right clear' onclick='clearSearchHistory()'>
+          Clear search history
+        </div>
+      </div>
+      <div class='savedSearches'>
+      </div>
+    </div>
+
+  </div>
+  <script src='./app.js'>
+  </script>
+</body>
+</html>
